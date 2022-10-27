@@ -53,12 +53,15 @@ Otherwise, the inverse will be returned wrapped up in Some
 */
 fn mod_inverse(a: isize, m: isize) -> Option<isize> {
     let (gcd, value_a, _) = euclid_gcd(a, m);
+    
 // When finding the inverse the GCD is always 1
     if gcd != 1 {
-        return None;
+        None
+    }else{
+
+        Some((value_a % m + m) % m)
     }
  
-    return Some((value_a % m + m) % m);
 }
 
 // we import the std::io create in order to read from standard-input

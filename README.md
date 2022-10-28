@@ -4,3 +4,6 @@
 
 
 ### Here is the finished solution to the research [Modular Multiplicative Inverse Implemented in Rust](src/main.rs)
+
+screenshot output
+![](img/Screenshot%20from%202022-10-28%2011-28-54.png)
